@@ -1,0 +1,148 @@
+#navbar1{
+  opacity: 1;
+}
+body{
+    /* background: rgb(17,14,61);
+    background: linear-gradient(135deg, rgba(17,14,61,1) 38%, rgba(80,16,119,1) 72%, rgba(139,0,38,1) 100%); */
+    /* background: rgb(68,6,6);
+    background: linear-gradient(129deg, rgba(68,6,6,1) 10%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%); */
+    background: rgb(68,6,6);
+    background: linear-gradient(129deg, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
+    height: 100vh;
+    width: 100%;
+    opacity: 1;background-size: 200% 200%;
+  
+}
+.intro-img
+{
+    flex-shrink: 0;
+    /* >img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 130vh;
+        flex-shrink: 0;
+} */
+}
+.intro-text{
+    flex:1 ;
+    padding: 20px;
+    opacity: 0.8;
+    margin-left: 10%;
+    margin-right: 50%;
+    text-align: left;
+    z-index:10000 ;
+    >p{
+        font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+    }
+}
+.intro {
+    text-align: center;
+    justify-content: space-between;
+    font-size: 25px;
+    display: flex;
+    margin-top: 5%;
+    color: white;
+
+}
+
+.intro-head{
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+
+}
+.img1 {
+    width: 100px;
+    height: auto; /* Maintains aspect ratio */
+    position: fixed;
+    top: 20%; /* Adjust the top position for img1 */
+    right: 20%; /* Adjust the left position for img1 */
+    z-index: 0; /* Ensure it's above other content */
+    pointer-events: auto; /* Enable pointer events initially */
+    transition: transform 0.3s ease; /* Add a smooth transition for hover effect */
+  }
+  
+  .img2 {
+    width: 100px;
+    height: auto; /* Maintains aspect ratio */
+    position: fixed;
+    top: 40%; /* Adjust the top position for img2 */
+    right: 30%; /* Adjust the left position for img2 */
+    
+    z-index: 0; /* Ensure it's above other content */
+    pointer-events: auto; /* Enable pointer events initially */
+    transition: transform 0.3s ease; /* Add a smooth transition for hover effect */
+  }
+  
+  .img3 {
+    width: 100px;
+    height: auto; /* Maintains aspect ratio */
+    position: fixed;
+    top: 60%; /* Adjust the top position for img3 */
+    right: 30%; /* Adjust the left position for img3 */
+    z-index: 0; /* Ensure it's above other content */
+    pointer-events: auto; /* Enable pointer events initially */
+    transition: transform 0.3s ease; /* Add a smooth transition for hover effect */
+  }
+  
+  .img4 {
+    width: 100px;
+    height: auto; /* Maintains aspect ratio */
+    position: fixed;
+    top: 85%; /* Adjust the top position for img4 */
+    right: 20%; /* Adjust the left position for img4 */
+
+    z-index: 0; /* Ensure it's above other content */
+    pointer-events: auto; /* Enable pointer events initially */
+    transition: transform 0.3s ease; /* Add a smooth transition for hover effect */
+  }
+  
+  .img1:hover, .img2:hover, .img3:hover, .img4:hover {
+    transform: translateX(60%); /* Move left by 70% and up by 70% on hover */
+  }
+
+  
+  .node1, .node2, .node4 {
+    width: 100px;
+    height: auto;
+  }
+
+  .node3{
+    width: 200px;
+    height: auto;
+  }
+  
+.img5{
+    width: 100px;
+    height: auto; /* Maintains aspect ratio */
+    position: fixed;
+    top: 15%; /* Adjust the top position for img3 */
+    right: 87%; /* Adjust the left position for img3 */
+    opacity: 0.5;
+     z-index: 0; /* Ensure it's above other content */
+    pointer-events: auto; /* Enable pointer events initially */
+    transition: transform 1s ease; /* Add a smooth transition for hover effect */
+
+  }
+  .node5{
+    pointer-events: none;
+    width: 1000px;
+    border-radius: 100px;
+    box-shadow: 20px 20px 20px 20px;
+    z-index:0 ;
+  }
+
+
+  .node6 { 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    top: 60px; /* Adjust the top property to move the element below the navbar */
+    left: 0;
+    width: 50%;
+    height: 90vh; /* Set the height to 100vh to cover the viewport height */
+    opacity: 1;
+    z-index: 0;
+    pointer-events: none;
+}

@@ -1,0 +1,12 @@
+.nav-item{
+    text-decoration: none;
+    color: rgb(139, 138, 138);
+    font-size: large;
+    display: inline-block;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+}
+.nav-item:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: 7000;
+}
