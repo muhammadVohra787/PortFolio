@@ -5,36 +5,38 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     width: 100%;
     opacity: 1;
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+
 }
 .name{
     color: white;
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
     text-align: center;
-    font-size: 60PX;
+    font-size: 300%;
 }
 .container-abt{
     display: flex;
     text-align: center;
     justify-content: space-between;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right:10%;
     margin-top: 2%;
 }
 .left{
     color: white;
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
-    font-size: 30px;
+    font-size: 130%;
     margin-left: 5%;
     text-align: left;
-    margin-top: 1%;
+    flex:1;
 }
 .right{
    
-
+    flex: 1;
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
 
     >img{
-    width: 500px;
+    width: 70%;
+
     height: auto;
 }
 
@@ -43,17 +45,49 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     color: white;
     font-size: 40px;
 }
-.node6{ 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+.res-btn{
+    position: relative;
+    padding: 1% 5%;
+  
+
+    >a{
+        text-decoration: none;
+        color: black;
+    }
+}
+.res-div{
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10%;
+
+    >button{
+        border: solid 1px rgb(32, 25, 230);
+        border-radius: 5px;
+        background-color: rgb(32, 25, 230);
+        >a{
+            color: white;
+        font-weight: 500;
+        }
+    }
+}
+.res-div>button:hover{
+    background-color: rgb(4, 1, 86);
+}
+
+.background {
+    position: relative;
+}
+
+.background-video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    z-index: 0;
-    pointer-events: none;
-}
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+
+} 
+   

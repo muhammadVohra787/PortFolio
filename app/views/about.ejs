@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('partials/title.ejs') %>
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <title>About</title>
+</head>
+
+<body>
+  <div class="background">
+    <video loop muted autoplay src="/img/rain3.mp4" class="background-video"></video> <!-- Video as background -->
+    <%- include ('partials/header_nav.ejs') %>
+    <h1 class="name">About Me</h1>
+    <br><br>
+    <div class="container-abt">
+      <div class="right">
+        <img class="img-responsive" src="/img/about.png"  > 
+      </div>
+      <div class="left">My name is Muhammad Ahmed Vohra, and I proudly hail from the vibrant country of Pakistan. Currently, I am a dedicated second-year student pursuing a degree in Software Engineering at Centennial College. My journey in the world of programming and technology has been nothing short of exciting. I am passionate about coding, problem-solving, and creating innovative solutions. Check my resume.
+        <br>
+       <div class="res-div"> <button class="res-btn"><a target="_blank" href="/img/Resume_CS.pdf">Here</a></button></div>
+      </div>
+    </div>
+<%- include ('partials/footer_nav.ejs') %>
+</div>
+</body>
+</html>

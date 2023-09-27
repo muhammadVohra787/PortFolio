@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('partials/title.ejs') %>
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <title>Project</title>
+</head>
+<body>
+
+    <%- include ('partials/header_nav.ejs') %>
+    <h1 class="name">My Projects</h1>
+    <br><br>
+    <div class="container-abt">
+      <div class="right">
+        <video loop muted autoplay src="/img/project1.mp4" style="width: 450px; max-height: 450px; object-fit: cover;"></video>
+      </div>
+      <div class="left"> In this project, I utilized JavaScript, jQuery, HTML, and CSS to craft an automated slideshow. 
+        The slideshow offers seamless zoom-in and zoom-out functionality facilitated by JavaScript timeout functions. 
+        Transitions between slides are smooth and uniform, enhancing the overall user experience. 
+        The slideshow is set to progress automatically every 3 seconds. 
+        It dynamically fetches image source (src) and alternate text (alt) tags from text files, allowing for a flexible and extensible approach to creating image slides.
+       <div class="res-div"> <button class="res-btn"><a target="_blank" href="http://studentweb.cencol.ca/mvohra10/Assignment4/index.html">Preview</a></button></div>
+      </div>
+      
+</div>
+<br><br><br>
+<div class="container-abt">
+    <div class="right">
+      <video loop muted autoplay src="/img/project2.mp4" style="width: 450px; max-height: 450px; object-fit: cover;"></video>
+    </div>
+    <div class="left"> In this project, I utilized JavaScript, jQuery, HTML, and CSS to craft an automated slideshow. 
+        In this project, I utilized JavaScript, HTML, and CSS to develop an engaging 'Hit-a-Bug' game. The core of the game revolves around a bug class, which includes attributes such as level and speed. To create the dynamic experience, I implemented a random number generator to spawn bugs at various locations on the screen.
+
+        To control the pace of the game, I incorporated a set time-out loop that governs the bug's speed. As players successfully click on the bugs, their score accumulates. What's intriguing is that the player's score affects the bug's speed. As the game progresses, the bugs become faster, providing an ever-increasing challenge.
+        
+        Additionally, I integrated a feature where players have the option to either continue playing or restart the game, ensuring an engaging and user-friendly gaming experience.
+      <br>
+     <div class="res-div"> <button class="res-btn"><a target="_blank" href="http://studentweb.cencol.ca/mvohra10/Vohra.301257640.Assignment3/game.html">Preview</a></button></div>
+    </div>
+    
+</div>
+<br><br><br>
+<div class="container-abt">
+    <div class="right">
+      <video loop muted autoplay src="/img/project3.mp4" style="width: 450px; max-height: 450px; object-fit: cover;"></video>
+    </div>
+    <div class="left"> In this project, I started my journey to explore React and the art of crafting polished websites like Turo, paying meticulous attention to every detail. The challenge lay in comprehending how React dynamically renders web pages and the array of functionalities it offers. To achieve this, I undertook the task of recreating Turo's homepage, gaining valuable experience in utilizing React libraries for features such as slideshows, date handling, and more. This allowed me to dive deeper into the world of web development and elevate my skills in creating sophisticated user interfaces.
+      <br>
+     <div class="res-div"> <button class="res-btn"><a target="_blank" href="https://github.com/muhammadVohra787/Turo">Github</a></button></div>
+    </div>
+    
+</div>
+    <%- include ('partials/footer_nav.ejs') %>
+</body>
+</html>
