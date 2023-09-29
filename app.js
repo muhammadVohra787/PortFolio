@@ -26,6 +26,9 @@ app.get('/projects', (req, res) => {
 app.get('/services', (req, res) => {
   res.render('service.ejs')
 });
+app.get('/contact', (req, res) => {
+  res.render('contact.ejs')
+});
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });

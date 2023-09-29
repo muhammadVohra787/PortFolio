@@ -11,8 +11,9 @@
     <h1 class="name">My Projects</h1>
     <br><br>
     <div class="container-abt">
-      <div class="right">
-        <video loop muted autoplay src="/img/project1.mp4" style="width: 450px; max-height: 450px; object-fit: cover;"></video>
+      <div id="right1">
+        <img src="/img/thumb1.png" id="thumb1" style="width: 450px; max-height: 450px; object-fit: cover;">
+        <video id="videoOne" class="vid video1" muted src="/img/project1.mp4" style="width: 450px; max-height: 450px; object-fit: cover;"  preload="none"></video>
       </div>
       <div class="left"> In this project, I utilized JavaScript, jQuery, HTML, and CSS to craft an automated slideshow. 
         The slideshow offers seamless zoom-in and zoom-out functionality facilitated by JavaScript timeout functions. 
@@ -25,8 +26,9 @@
 </div>
 <br><br><br>
 <div class="container-abt">
-    <div class="right">
-      <video loop muted autoplay src="/img/project2.mp4" style="width: 450px; max-height: 450px; object-fit: cover;"></video>
+    <div id="right2">
+      <img src="/img/thumb2.png" id="thumb2" style="width: 450px; max-height: 450px; object-fit: cover;">
+      <video id="videoTwo" class="vid video2" loop muted  src="/img/project2.mp4" style="width: 450px; max-height: 450px; object-fit: cover;"  preload="none"></video>
     </div>
     <div class="left"> In this project, I utilized JavaScript, jQuery, HTML, and CSS to craft an automated slideshow. 
         In this project, I utilized JavaScript, HTML, and CSS to develop an engaging 'Hit-a-Bug' game. The core of the game revolves around a bug class, which includes attributes such as level and speed. To create the dynamic experience, I implemented a random number generator to spawn bugs at various locations on the screen.
@@ -41,8 +43,9 @@
 </div>
 <br><br><br>
 <div class="container-abt">
-    <div class="right">
-      <video loop muted autoplay src="/img/project3.mp4" style="width: 450px; max-height: 450px; object-fit: cover;"></video>
+    <div id="right3">
+      <img src="/img/thumb3.png" id="thumb3" style="width: 450px; max-height: 450px; object-fit: cover;">
+      <video id="videoThree" class="vid video3" loop muted src="/img/project3.mp4" style="width: 450px; max-height: 450px; object-fit: cover;"  preload="none"></video>
     </div>
     <div class="left"> In this project, I started my journey to explore React and the art of crafting polished websites like Turo, paying meticulous attention to every detail. The challenge lay in comprehending how React dynamically renders web pages and the array of functionalities it offers. To achieve this, I undertook the task of recreating Turo's homepage, gaining valuable experience in utilizing React libraries for features such as slideshows, date handling, and more. This allowed me to dive deeper into the world of web development and elevate my skills in creating sophisticated user interfaces.
       <br>
@@ -51,5 +54,51 @@
     
 </div>
     <%- include ('partials/footer_nav.ejs') %>
+    <script>
+  var videos = document.getElementsByClassName('vid');
+  var thumb1=document.getElementById('thumb1');
+  var div1 = document.getElementById('right1');
+  var thumb2=document.getElementById('thumb2');
+  var div2 = document.getElementById('right2');
+  var thumb3=document.getElementById('thumb3');
+  var div3 = document.getElementById('right3');
+
+div1.addEventListener("mouseover", function () {
+  videos[0].play();
+  thumb1.style.display="none";
+  document.getElementById('videoOne').style.display="inline-block";
+
+});
+
+div1.addEventListener("mouseout", function () {
+  videos[0].pause();
+  thumb1.style.display="inline-block";
+  document.getElementById('videoOne').style.display="none";
+});
+
+div2.addEventListener("mouseover", function () {
+  videos[1].play();
+  thumb2.style.display="none";
+  document.getElementById('videoTwo').style.display="inline-block";
+});
+
+div2.addEventListener("mouseout", function () {
+  videos[1].pause();
+  thumb2.style.display="inline-block";
+  document.getElementById('videoTwo').style.display="none";
+});
+
+div3.addEventListener("mouseover", function () {
+  videos[2].play();
+  thumb3.style.display="none";
+  document.getElementById('videoThree').style.display="inline-block";
+});
+
+div3.addEventListener("mouseout", function () {
+  videos[2].pause();
+  thumb3.style.display="inline-block";
+  document.getElementById('videoThree').style.display="none";
+});
+    </script>
 </body>
 </html>

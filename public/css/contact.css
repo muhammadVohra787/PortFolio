@@ -1,0 +1,99 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 0;;
+    text-align: center;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+    
+  }
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 40px solid #6a0dad;
+    border-radius: 10px;
+    background-color: #111;
+    box-shadow: 20px 20px 20px 20px #e9daf3;
+    color: #111;
+    font-size: large;
+  }
+  #contactForm{
+    z-index: 0;
+    margin-bottom: 10vh;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6a0dad;
+    
+  }
+  input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    color: #111;
+
+  }
+  input#name{
+    color: #111;
+  }
+  input[type="submit"] {
+    background-color: #6a0dad;
+    color: #fff;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover{
+    background-color: #3c0464;
+  }
+  #name{
+    color: white;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+
+}
+.submit-btn{
+    background-color: #a19c9c;
+    opacity: 0.1;
+    z-index: 10;
+    height: 900px;
+    width: auto;
+}
+.submit-msg{
+    z-index: 100;
+    position: absolute;
+    background-color: #ffffff;
+    color: black;
+    opacity: 1;
+    top:50%;
+    left:37%;
+    text-align: center;
+}
+#myModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #111;
+    border: 2px solid #6a0dad;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#modalContent {
+    color: #fff;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}

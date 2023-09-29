@@ -28,15 +28,15 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     text-align: left;
     flex:1;
 }
-.right{
+#right1,#right2,#right3{
    
     flex: 1;
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
 
     >img{
     width: 70%;
-
     height: auto;
+   
 }
 
 }
@@ -90,4 +90,7 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     z-index: -1; 
 
 } 
-   
+#videoOne,#videoTwo,#videoThree{
+    display: none;
+}
+

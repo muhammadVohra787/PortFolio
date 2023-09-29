@@ -5,10 +5,9 @@
 body{
     background: rgb(68,6,6);
     background: linear-gradient(129deg, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
-    height: 100vh;
     width: 100%;
     opacity: 1;
-    background-size: 200% 200%;
+
 }
 .intro {
   color: white;
@@ -16,10 +15,13 @@ body{
   z-index: 2;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, 0); /* Only center vertically */
-  text-align: center; /* Center text horizontally */
+  transform: translate(-50%, 0); 
+  text-align: center; 
 }
-
+#cr-item{
+  width: 100%;
+  height: 800px;
+}
 .intro-head {
   font-size: 8vh;
   color: white;
@@ -41,98 +43,13 @@ body{
     font-size: 250%;
 }
 
-/* .intro {
-    text-align: center;
-    justify-content: space-between;
-    display: flex;
-    margin-top: 5%;
-    color: white;
-    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
-} */
 
 .intro-head{
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
     
   }
 
-/* .img1 {
-    width: 100px;
-    height: auto;
-    position: fixed;
-    top: 20%;
-    right: 20%;
-    z-index: 0;
-    pointer-events: auto;
-    transition: transform 0.3s ease;
-}
 
-.img2 {
-    width: 100px;
-    height: auto;
-    position: fixed;
-    top: 40%;
-    right: 30%;
-    z-index: 0;
-    pointer-events: auto;
-    transition: transform 0.3s ease;
-}
-
-.img3 {
-    width: 100px;
-    height: auto;
-    position: fixed;
-    top: 60%;
-    right: 30%;
-    z-index: 0;
-    pointer-events: auto;
-    transition: transform 0.3s ease;
-}
-
-.img4 {
-    width: 100px;
-    height: auto;
-    position: fixed;
-    top: 85%;
-    right: 20%;
-    z-index: 0;
-    pointer-events: auto;
-    transition: transform 0.3s ease;
-}
-
-.img1:hover, .img2:hover, .img3:hover, .img4:hover {
-    transform: translateX(60%);
-}
-
-.node1, .node2, .node4 {
-    width: 100px;
-    height: auto;
-}
-
-.node3{
-    width: 200px;
-    height: auto;
-}
-
-.img5{
-    width: 100px;
-    height: auto;
-    position: fixed;
-    top: 15%;
-    right: 87%;
-    opacity: 0.5;
-    z-index: 0;
-    pointer-events: auto;
-    transition: transform 1s ease;
-}
-
-.node5{
-    pointer-events: none;
-    width: 1000px;
-    border-radius: 100px;
-    box-shadow: 20px 20px 20px 20px;
-    z-index: 0;
-}
-*/
 .node6 { 
     background-size: cover;
     background-repeat: no-repeat;
@@ -142,7 +59,7 @@ body{
     top: 60px;
     left: 0;
     width: 50%;
-    height: 90vh;
+
     opacity: 1;
     z-index: 0;
     pointer-events: none;
@@ -187,3 +104,17 @@ body{
 .res-div>button:hover{
   background-color: rgb(4, 1, 86);
 }
+.background {
+  position: relative;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100vh;
+  height: 800px;
+  z-index: -1; 
+} 

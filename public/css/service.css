@@ -4,38 +4,36 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     height: 100vh;
     width: 100%;
     opacity: 1;
-    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
 }
-.name{
+#name{
     color: white;
-    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
-    text-align: center;
-    font-size: 300%;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+
+    margin-left: 10vh; 
 }
 .container-abt{
-    display: flex;
+    display: block;
     text-align: center;
     justify-content: space-between;
     margin-left: 10%;
     margin-right:10%;
     margin-top: 2%;
 }
-.left{
+#left{
     color: white;
-    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
-    font-size: 110%;
-    margin-left: 5%;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+    font-size: 105%;
     text-align: left;
     flex:1;
+    margin-left: 20%
 }
 .right{
-   
     flex: 1;
-    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
-
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
     >img{
-    width: 70%;
-
+    width: 50%;
+    
     height: auto;
 }
 
@@ -43,11 +41,12 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
 .heading{
     color: white;
     font-size: 40px;
+
 }
 .res-btn{
     position: relative;
-    padding: 1% 5%;
-  
+    padding: 1% 2%;
+    
 
     >a{
         text-decoration: none;
@@ -58,15 +57,17 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     justify-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 2%;
 
     >button{
         border: solid 1px rgb(42, 230, 25);
         border-radius: 5px;
         background-color: rgb(42, 230, 25);
+    
         >a{
             color: white;
         font-weight: 500;
+        font-size: large;
         }
     }
 }
@@ -87,32 +88,37 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1; 
+    z-index: -1;
 
-} 
+}
 
 .navig-bar{
-   
-    display: flex;
-    color: white;
-    font-size: 2vh;
-    background-color: rgb(2, 54, 2);
+   position: absolute;
+    width:15%;
+    top: 0;
+    left:0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     justify-content: center;
-    border-radius: 20px;
-    padding:1vh 3vh;
-    margin: 0 50vh;
-    margin-top: 2vh;
+    padding:0;
+    margin: 0;
+    margin-top: 60px;
+    clear: both;
+    
     >div{
         margin-right: 2.2vh;
+        color: rgb(154, 150, 150) ;
+        border-top:2px solid black;
+        border-bottom:2px black solid;
+        margin: 0;
+
+       
     }
 
 }
-.navig-bar>button{
-        background-color: rgb(7, 123, 7);
-        border: none;;
-        border-right: 2px solid rgb(7, 123, 7);;
-        border-left: 2px solid rgb(7, 123, 7);;
-        border-radius: 20px; 
+.navig-bar>div:hover{
+    background-color: rgb(184, 184, 185);
+}
 
-    }
+
