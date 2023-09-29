@@ -1,3 +1,5 @@
+/* home.css, Muhammad vohra, 301257640, 2023/09/29 */
+
 #navbar1{
   opacity: 1;
 }
@@ -82,7 +84,7 @@ body{
     }
   }
 }
-.res-div{
+.aboutme-div{
   justify-items: center;
   text-align: center;
   justify-content: center;
@@ -90,7 +92,7 @@ body{
 
   >button{
       border: solid 1px rgb(32, 25, 230);
-      border-radius: 5px;
+      border-radius: 5paboutme-divx;
       background-color: rgb(32, 25, 230);
       margin-top: 2%;
       padding: 1% 3%;
@@ -101,7 +103,7 @@ body{
       }
   }
 }
-.res-div>button:hover{
+.aboutme-div>button:hover{
   background-color: rgb(4, 1, 86);
 }
 .background {

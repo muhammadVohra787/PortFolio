@@ -3,20 +3,20 @@
 <head>
     <%- include ('partials/title.ejs') %>
     <link rel="stylesheet" type="text/css" href="css/home.css">
-    <title>Homepage</title>
+    <title><%= title %></title>
 </head>
 <%- include ('partials/header_nav.ejs') %>
 <body>
     <div class="background">
       <div class="intro">
         <br><br><br>
-        <p class="intro-head" > WELCOME</p>
+        <p class="intro-head" > WELCOME TO <%= title %> </p>
         <p class="MissonMsg">
             My mission is to leverage my skills, creativity, and dedication to make a meaningful contribution to Software Development. 
           I aim to continuously learn, innovate, and collaborate with like-minded professionals to solve complex challenges and create solutions that positively impact individuals and communities.
            More <b><a href="about" style="color:white">about me?</a></b>
           </p>
-          <div class="res-div"> <button class="res-btn"><a href="/about">Here</a></button></div>
+          <div class="aboutme-div"> <button class="res-btn"><a href="/about">Here</a></button></div>
         </div>
       </div>
       

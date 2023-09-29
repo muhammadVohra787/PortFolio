@@ -3,12 +3,12 @@
 <head>
     <%- include ('partials/title.ejs') %>
     <link rel="stylesheet" type="text/css" href="css/projects.css">
-    <title>Project</title>
+    <title><%= title %></title>
 </head>
 <body>
 
     <%- include ('partials/header_nav.ejs') %>
-    <h1 class="name">My Projects</h1>
+    <h1 class="name"><%= title %></h1>
     <br><br>
     <div class="container-abt">
       <div id="right1">
@@ -54,51 +54,7 @@
     
 </div>
     <%- include ('partials/footer_nav.ejs') %>
-    <script>
-  var videos = document.getElementsByClassName('vid');
-  var thumb1=document.getElementById('thumb1');
-  var div1 = document.getElementById('right1');
-  var thumb2=document.getElementById('thumb2');
-  var div2 = document.getElementById('right2');
-  var thumb3=document.getElementById('thumb3');
-  var div3 = document.getElementById('right3');
-
-div1.addEventListener("mouseover", function () {
-  videos[0].play();
-  thumb1.style.display="none";
-  document.getElementById('videoOne').style.display="inline-block";
-
-});
-
-div1.addEventListener("mouseout", function () {
-  videos[0].pause();
-  thumb1.style.display="inline-block";
-  document.getElementById('videoOne').style.display="none";
-});
-
-div2.addEventListener("mouseover", function () {
-  videos[1].play();
-  thumb2.style.display="none";
-  document.getElementById('videoTwo').style.display="inline-block";
-});
-
-div2.addEventListener("mouseout", function () {
-  videos[1].pause();
-  thumb2.style.display="inline-block";
-  document.getElementById('videoTwo').style.display="none";
-});
-
-div3.addEventListener("mouseover", function () {
-  videos[2].play();
-  thumb3.style.display="none";
-  document.getElementById('videoThree').style.display="inline-block";
-});
-
-div3.addEventListener("mouseout", function () {
-  videos[2].pause();
-  thumb3.style.display="inline-block";
-  document.getElementById('videoThree').style.display="none";
-});
-    </script>
+    <script src="/js/projects.js"></script>
+    
 </body>
 </html>

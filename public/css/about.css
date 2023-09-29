@@ -1,3 +1,4 @@
+/* About.css, Muhammad vohra, 301257640, 2023/09/29 */
 body{
     background: rgb(0,0,0);
 background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba(80,16,119,1) 100%);
@@ -13,7 +14,7 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     text-align: center;
     font-size: 300%;
 }
-.container-abt{
+.container-around{
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -21,7 +22,7 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     margin-right:10%;
     margin-top: 2%;
 }
-.left{
+.left-container{
     color: white;
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
     font-size: 130%;
@@ -29,7 +30,7 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     text-align: left;
     flex:1;
 }
-.right{
+.right-container{
    
     flex: 1;
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 

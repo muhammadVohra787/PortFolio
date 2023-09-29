@@ -4,11 +4,12 @@
     <%- include ('partials/title.ejs') %>
     <link rel="stylesheet" type="text/css" href="css/service.css">
 
-    <title>Services</title>
+    <title><%= title %></title>
 </head>
     <body>
+  
         <%- include ('partials/header_nav.ejs') %>
-
+        <h1 id="title-nm"><%= title %></h1>
         <div class="navig-bar">
             <div id="service1" class="active-sv"><br>Responsive Web Development<br><br></div>
 
@@ -19,15 +20,6 @@
             <div id="service4"><br>Database Design and Management<br><br></div>
           </div>
          
-
-
-       
-   
-         
-        <!-- <video loop muted autoplay src="/img/rain3.mp4" class="background-video"></video> Video as background -->
-
-       
-        
         <div class="container-abt">
         <div class="right">
             <h1 id="name">Responsive Web Development</h1>

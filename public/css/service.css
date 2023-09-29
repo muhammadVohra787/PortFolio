@@ -1,3 +1,5 @@
+/* service.css, Muhammad vohra, 301257640, 2023/09/29 */
+
 body{
     background: rgb(0,0,0);
 background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba(80,16,119,1) 100%);
@@ -11,6 +13,12 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
 
     margin-left: 10vh; 
+}
+#title-nm{
+    color: white;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+    text-align: center;
+
 }
 .container-abt{
     display: block;
@@ -98,7 +106,7 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     top: 0;
     left:0;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(46, 4, 81);
     text-align: center;
     justify-content: center;
     padding:0;
@@ -108,17 +116,17 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     
     >div{
         margin-right: 2.2vh;
-        color: rgb(154, 150, 150) ;
+        color: rgb(255, 255, 255) ;
         border-top:2px solid black;
         border-bottom:2px black solid;
         margin: 0;
-
-       
+        background-color: rgb(46, 4, 81);
+        position: relative;
     }
 
 }
 .navig-bar>div:hover{
-    background-color: rgb(184, 184, 185);
+    background-color: rgb(163, 142, 221);
 }
 
 

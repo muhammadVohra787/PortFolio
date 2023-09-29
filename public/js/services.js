@@ -1,3 +1,5 @@
+/* services.js, Muhammad vohra, 301257640, 2023/09/29 */
+
 var btns1 = document.getElementById('service1');
 var btns2 = document.getElementById('service2');
 var btns3 = document.getElementById('service3');
@@ -103,11 +105,11 @@ function setBackground(num) {
         var currentBtn = document.getElementById('service' + i);
         
         if (i === num) {
-            currentBtn.style.backgroundColor = ' rgb(184, 184, 185)';
+            currentBtn.style.backgroundColor = 'rgb(163, 142, 221)';
             currentBtn.style.color='#fff';
         } else {
-            currentBtn.style.backgroundColor = 'rgb(255, 255, 255)';
-            currentBtn.style.color='black'
+            currentBtn.style.backgroundColor = 'rgb(46, 4, 81)';
+            currentBtn.style.color='#fff'
         }
     }
 }
