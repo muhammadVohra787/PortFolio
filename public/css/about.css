@@ -65,6 +65,7 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
     >button{
         border: solid 1px rgb(32, 25, 230);
         border-radius: 5px;
+        font-size: 2.5vh;
         background-color: rgb(32, 25, 230);
         >a{
             color: white;
@@ -75,20 +76,3 @@ background: linear-gradient(135deg, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba
 .res-div>button:hover{
     background-color: rgb(4, 1, 86);
 }
-
-.background {
-    position: relative;
-}
-
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100vh;
-    height: 800px;
-    z-index: -1; 
-
-} 
-   

@@ -92,7 +92,8 @@ body{
 
   >button{
       border: solid 1px rgb(32, 25, 230);
-      border-radius: 5paboutme-divx;
+      border-radius: 5px;
+      font-size: 2.5vh;
       background-color: rgb(32, 25, 230);
       margin-top: 2%;
       padding: 1% 3%;
